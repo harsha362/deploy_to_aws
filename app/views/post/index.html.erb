@@ -1,0 +1,13 @@
+<div>
+	
+	<p><%= link_to "new", new_post_path %></p>
+
+</div>
+<% @posts.each do |post| %>
+<div style="border-style:groove;border-radius: 2px" >
+<p><label>Title : </label><%= post.title %></p>
+<p><%= post.description %></p>
+<p><%= post.category.name %></p>
+<p><%= link_to "show", post %></p>
+</div>
+<% end %>

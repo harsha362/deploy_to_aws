@@ -1,0 +1,6 @@
+<p><%= @post.title %></p>
+<p><%= @post.description %></p>
+<p><%= @post.created_at %></p>
+<p><%= link_to "edit",edit_post_path(@post) %></p>
+<p><%= link_to "delete",@post, :method => :delete %></p>
+<p><%= link_to "back", :back %></p>
